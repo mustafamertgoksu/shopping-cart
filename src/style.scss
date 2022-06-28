@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.App {
+  background: #eeeeee;
+  height: 100vh;
+  overflow: auto;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #0b81ff;
+    align-items: center;
+    justify-content: space-around;
+    h1 {
+      color: #f2f2f2;
+      cursor: default;
+    }
+    div {
+      .shopping-icon {
+        font-size: 20 + 20px;
+        cursor: pointer;
+      }
+      span.amount {
+        color: #222;
+        font-size: large;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    h1.main-title {
+      font-size: xx-large;
+      margin: 1rem 0;
+    }
+    ul {
+      li {
+        .left {
+          display: flex;
+          flex-direction: column;
+        }
+        img {
+          border-radius: 1rem;
+        }
+        button {
+          background-color: rgb(205, 13, 13);
+          color: #f2f2f2;
+          border: none;
+          width: 100%;
+          padding: 0.6rem 0;
+          cursor: pointer; 
+        }
+      }
+    }
+    h3 {
+      font-size: large;
+      margin: 1rem 0;
+    }
+    button.clear-cart {
+      background-color: rgb(137, 14, 14);
+      color: #f2f2f2;
+      border: none;
+      width: 100%;
+      padding: 0.6rem 0;
+      cursor: pointer; 
+    }
+  }
+}
